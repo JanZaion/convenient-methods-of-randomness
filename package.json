@@ -1,0 +1,25 @@
+{
+  "name": "convenient-methods-of-randomness",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JanZaion/convenient-methods-of-randomness.git"
+  },
+  "keywords": [
+    "random"
+  ],
+  "author": "Jan Zaion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JanZaion/convenient-methods-of-randomness/issues"
+  },
+  "homepage": "https://github.com/JanZaion/convenient-methods-of-randomness#readme",
+  "dependencies": {
+    "random-js": "^2.1.0"
+  }
+}
