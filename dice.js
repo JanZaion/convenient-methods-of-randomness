@@ -9,12 +9,12 @@ function boolean(probability) {
   return randoBool;
 }
 
-//Returns any integer in the min to max-1 range. The max integer is excluded, so a roll for 2-8 would look like this: diceRange(9, 2)
+//Returns any integer in the min to max-1 range. The max integer is excluded, so a roll for 2-8 would look like this: range(9, 2)
 function range(max, min) {
   return Math.floor(Math.random() * (max - min) + min);
 }
 
-//Multiple dice rolls, returns an array of unique ascending different integer that is as long as the 'rolls' input. Max is excluded just like with diceRange.
+//Multiple dice rolls, returns an array of unique ascending different integer that is as long as the 'rolls' input.
 function multiRollUniqueSortedAscending(max, min, rolls) {
   let arr = [];
   while (arr.length < rolls) {
@@ -26,7 +26,7 @@ function multiRollUniqueSortedAscending(max, min, rolls) {
   });
 }
 
-//Multiple dice rolls, returns an array of ascending different integers that is as long as the 'rolls' input. Max is excluded just like with diceRange.
+//Multiple dice rolls, returns an array of ascending different integers that is as long as the 'rolls' input.
 function multiRollSortedAscending(max, min, rolls) {
   let arr = [];
   for (let i = 0; i < rolls; i++) {
@@ -37,7 +37,7 @@ function multiRollSortedAscending(max, min, rolls) {
   });
 }
 
-//Multiple dice rolls, returns an array of unique descending different integers that is as long as the 'rolls' input. Max is excluded just like with diceRange.
+//Multiple dice rolls, returns an array of unique descending different integers that is as long as the 'rolls' input.
 function multiRollUniqueSortedDescending(max, min, rolls) {
   let arr = [];
   while (arr.length < rolls) {
@@ -49,7 +49,7 @@ function multiRollUniqueSortedDescending(max, min, rolls) {
   });
 }
 
-//Multiple dice rolls, returns an array of descending different integers that is as long as the 'rolls' input. Max is excluded just like with diceRange.
+//Multiple dice rolls, returns an array of descending different integers that is as long as the 'rolls' input.
 function multiRollSortedDescending(max, min, rolls) {
   let arr = [];
   for (let i = 0; i < rolls; i++) {
@@ -60,7 +60,7 @@ function multiRollSortedDescending(max, min, rolls) {
   });
 }
 
-//Multiple dice rolls, returns an array of unique unsorted integers that is as long as the 'rolls' input. Max is excluded just like with diceRange.
+//Multiple dice rolls, returns an array of unique unsorted integers that is as long as the 'rolls' input.
 function multiRollUniqueUnsorted(max, min, rolls) {
   let arr = [];
   while (arr.length < rolls) {
@@ -70,7 +70,7 @@ function multiRollUniqueUnsorted(max, min, rolls) {
   return arr;
 }
 
-//Multiple dice rolls, returns an array of unsorted integers that is as long as the 'rolls' input. Max is excluded just like with diceRange.
+//Multiple dice rolls, returns an array of unsorted integers that is as long as the 'rolls' input.
 function multiRollUnsorted(max, min, rolls) {
   let arr = [];
   for (let i = 0; i < rolls; i++) {
