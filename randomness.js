@@ -78,3 +78,15 @@ function diceMultiRollUnsorted(max, min, rolls) {
   }
   return arr;
 }
+
+module.exports = {
+  dice,
+  diceBoolean,
+  diceRange,
+  diceMultiRollUniqueSortedAscending,
+  diceMultiRollSortedAscending,
+  diceMultiRollUniqueSortedDescending,
+  diceMultiRollSortedDescending,
+  diceMultiRollUniqueUnsorted,
+  diceMultiRollUnsorted,
+};
