@@ -1,6 +1,6 @@
 {
   "name": "convenient-methods-of-randomness",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A set of convenience methods for random number generation in Javascript.",
   "main": "dice.js",
   "scripts": {
