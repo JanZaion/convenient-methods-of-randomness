@@ -13,6 +13,13 @@ const dice = require('convenient-methods-of-randomness');
 const zeroToFour = dice.int(5);
 ```
 
+Or you can bring methods individually:
+
+```
+const { int } = require('convenient-methods-of-randomness');
+const zeroToFour = int(5);
+```
+
 ## Methods
 
 `int(integer)` returns any integer in the 0 to integer-1 range.  
