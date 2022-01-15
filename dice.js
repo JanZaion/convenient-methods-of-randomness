@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.multiRollUnsorted = exports.multiRollUniqueUnsorted = exports.multiRollSortedDescending = exports.multiRollUniqueSortedDescending = exports.multiRollSortedAscending = exports.multiRollUniqueSortedAscending = exports.range = exports.boolean = exports.int = void 0;
 /**
  * Returns a random positive integer.
  * @param integer upper bound for the returned integer.
@@ -9,6 +11,7 @@ function int(integer) {
         throw 'Parameter integer can only be a positive integer.';
     return Math.floor(Math.random() * integer);
 }
+exports.int = int;
 /**
  * Returns random boolean.
  * @param propability decimal number representing probability.
@@ -18,6 +21,7 @@ function boolean(probability) {
     let randoBool = Math.random() <= probability;
     return randoBool;
 }
+exports.boolean = boolean;
 /**
  * Returns any integer in the min to max-1 range.
  * @param max upper bound for the returned integer.
@@ -27,6 +31,7 @@ function boolean(probability) {
 function range(max, min) {
     return Math.floor(Math.random() * (max - min) + min);
 }
+exports.range = range;
 /**
  * Multiple dice rolls for unique integers sorted in an ascending order.
  * @param max upper bound for the returned integer.
@@ -45,6 +50,7 @@ function multiRollUniqueSortedAscending(max, min, rolls) {
         return a - b;
     });
 }
+exports.multiRollUniqueSortedAscending = multiRollUniqueSortedAscending;
 /**
  * Multiple dice rolls for integers sorted in an ascending order.
  * @param max upper bound for the returned integer.
@@ -61,6 +67,7 @@ function multiRollSortedAscending(max, min, rolls) {
         return a - b;
     });
 }
+exports.multiRollSortedAscending = multiRollSortedAscending;
 /**
  * Multiple dice rolls for unique integers sorted in a descending order.
  * @param max upper bound for the returned integer.
@@ -79,6 +86,7 @@ function multiRollUniqueSortedDescending(max, min, rolls) {
         return b - a;
     });
 }
+exports.multiRollUniqueSortedDescending = multiRollUniqueSortedDescending;
 /**
  * Multiple dice rolls for integers sorted in a descending order.
  * @param max upper bound for the returned integer.
@@ -95,6 +103,7 @@ function multiRollSortedDescending(max, min, rolls) {
         return b - a;
     });
 }
+exports.multiRollSortedDescending = multiRollSortedDescending;
 /**
  * Multiple dice rolls for unique unsorted integers.
  * @param max upper bound for the returned integer.
@@ -111,6 +120,7 @@ function multiRollUniqueUnsorted(max, min, rolls) {
     }
     return arr;
 }
+exports.multiRollUniqueUnsorted = multiRollUniqueUnsorted;
 /**
  * Multiple dice rolls for unsorted integers.
  * @param max upper bound for the returned integer.
@@ -125,14 +135,4 @@ function multiRollUnsorted(max, min, rolls) {
     }
     return arr;
 }
-module.exports = {
-    int,
-    boolean,
-    range,
-    multiRollUniqueSortedAscending,
-    multiRollSortedAscending,
-    multiRollUniqueSortedDescending,
-    multiRollSortedDescending,
-    multiRollUniqueUnsorted,
-    multiRollUnsorted,
-};
+exports.multiRollUnsorted = multiRollUnsorted;
